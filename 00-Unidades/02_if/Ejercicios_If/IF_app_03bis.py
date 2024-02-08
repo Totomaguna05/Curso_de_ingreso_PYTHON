@@ -40,9 +40,9 @@ class App(customtkinter.CTk):
             alert("Utn", "Es pivot")
         else:
             alert("Utn", "No es pivot")
-        
-
-
+            
+            
+            
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
