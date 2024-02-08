@@ -40,7 +40,17 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        numero_uno = self.txt_operador_a.get()
+
+        numero_dos = self.txt_operador_b.get()
+
+        numero_uno = int(numero_uno)
+
+        numero_dos = int(numero_dos)
+
+        
+
+
         
         
     
