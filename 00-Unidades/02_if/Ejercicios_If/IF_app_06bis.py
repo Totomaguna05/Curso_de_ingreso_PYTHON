@@ -54,11 +54,11 @@ class App(customtkinter.CTk):
         
         else:
             mensaje = "el jugador es pivot"
-
-        alert("Utn", mensaje)
-
         
-
+        alert("Utn", mensaje)
+        
+        
+        
         
         
     
