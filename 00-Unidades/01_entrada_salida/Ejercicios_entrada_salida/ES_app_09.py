@@ -33,7 +33,15 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        
+        valor_sueldo = self.txt_sueldo.get()
+
+        valor_sueldo = int(valor_sueldo)
+        
+        
+
+
+
         
     
 if __name__ == "__main__":
