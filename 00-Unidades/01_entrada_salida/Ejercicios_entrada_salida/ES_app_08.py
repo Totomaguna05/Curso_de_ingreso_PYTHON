@@ -51,15 +51,12 @@ class App(customtkinter.CTk):
         resto_de_la_division = numero_uno % numero_dos
 
         alert("datos", "El resto de la division entre ambos numeros es "f"{resto_de_la_division}")
-
-        self.txt_operador_a.delete("0,END")
-
-        self.txt_operador_b.delete("0,END")
-
-
+        
+        self.txt_operador_a.delete(0,"end")
+        
+        self.txt_operador_b.delete(0,"end")       
         
         
-    
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
