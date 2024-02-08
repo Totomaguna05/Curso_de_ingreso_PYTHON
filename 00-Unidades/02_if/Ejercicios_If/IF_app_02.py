@@ -41,7 +41,7 @@ class App(customtkinter.CTk):
         if edad_int > 18:
 
             alert("Utn", "Es mayor")
-            
+
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
