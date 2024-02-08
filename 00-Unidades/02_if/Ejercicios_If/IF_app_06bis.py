@@ -39,7 +39,25 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        altura = self.txt_altura.get()
+        altura_flout = float(altura)
+
+        if altura_flout < 160:
+
+            mensaje = "el jugador es base"
+
+        elif altura_flout < 180:
+            mensaje = "el jugador es escolta"
+
+        elif altura_flout < 200:
+            mensaje = "el jugador es alero"
+
+        else:
+            mensaje = "el jugador es pivot"
+
+        alert("Utn", mensaje)
+
+        
 
         
         
