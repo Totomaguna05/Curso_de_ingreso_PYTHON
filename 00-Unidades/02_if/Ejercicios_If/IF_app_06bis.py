@@ -45,13 +45,13 @@ class App(customtkinter.CTk):
         if altura_flout < 160:
 
             mensaje = "el jugador es base"
-
+        
         elif altura_flout < 180:
             mensaje = "el jugador es escolta"
-
+        
         elif altura_flout < 200:
             mensaje = "el jugador es alero"
-
+        
         else:
             mensaje = "el jugador es pivot"
 

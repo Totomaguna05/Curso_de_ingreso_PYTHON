@@ -55,7 +55,7 @@ class App(customtkinter.CTk):
         self.txt_operador_a.delete("0,END")
 
         self.txt_operador_b.delete("0,END")
-        
+
 
         
         
