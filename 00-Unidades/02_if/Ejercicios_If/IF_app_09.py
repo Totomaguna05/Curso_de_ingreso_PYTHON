@@ -27,9 +27,16 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        numero_aleatorio = random.randint(1, 10)
+
+        numero_int = int(numero_aleatorio)
+
+        if numero_int > 1 and numero_int <= 10:
+            
+            alert("Numero aleatorio", numero_int)
         
 
+        
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
