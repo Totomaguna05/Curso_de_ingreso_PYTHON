@@ -87,7 +87,7 @@ class App(customtkinter.CTk):
         producto_1_int = float(producto_1)
         producto_2_int = float(producto_2)
         producto_3_int = float(producto_3)
-
+        
         total = producto_1_int + producto_2_int + producto_3_int
         precio_sin_iva = total * 0.21
         
