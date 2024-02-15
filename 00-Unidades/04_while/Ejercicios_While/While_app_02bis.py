@@ -29,9 +29,19 @@ class App(customtkinter.CTk):
         
     
     def btn_mostrar_iteracion_on_click(self):
-        pass
-    
-    
+        suma = 0
+        contador = 2
+
+        while contador <= 10: #mientras sea menor o igual a 10
+            suma += contador #se le suma 
+            contador += 2 
+            
+        alert("Utn", suma) #se muestra en el alert el acumulador y no el contador
+
+
+            
+            
+            
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")

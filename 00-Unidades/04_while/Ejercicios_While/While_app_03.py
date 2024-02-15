@@ -29,9 +29,12 @@ class App(customtkinter.CTk):
         
     
     def btn_pedir_clave_on_click(self):
-        pass
-    
-    
+        clave = prompt("clave", "ingrese clave")
+        while clave != "utn750":
+            clave = prompt("error", "reingrese clave") #uso la misma variable para que no se forme un bucle infinito
+
+        alert("banco", "bienvenido a bbva")
+        
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
