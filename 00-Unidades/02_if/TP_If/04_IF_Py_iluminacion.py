@@ -43,9 +43,27 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
-        pass
+        cantidad = int(self.combobox_cantidad.get())
+        marca = self.combobox_marca.get()
+        unidad = 800
+        descuento = 0
+        descuento_extra = 0
         
-    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")

@@ -14,7 +14,7 @@ Enunciado:
 
 2.	Para el departamento de Pinturas:
 	A.	Al ingresar una temperatura en Fahrenheit debemos mostrar la temperatura en Centígrados con un mensaje concatenado 
-        (0 °F − 32) × 5/9 = -17,78 °C
+        (0 °F − 32) × 5/9 = -17,78 °C  
 
     B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en Fahrenheit 
         (0 °C × 9/5) + 32 = 32 °F
@@ -23,7 +23,7 @@ Enunciado:
 
 class App(customtkinter.CTk):
     
-    def __init__(self):
+    def __init__(self):   
         super().__init__()
 
         # configure window
@@ -40,7 +40,7 @@ class App(customtkinter.CTk):
         
         self.txt_temperatura_f = customtkinter.CTkEntry(master=self)
         self.txt_temperatura_f.grid(row=1, column=1)
-       
+        
         self.btn_convertir_c_f = customtkinter.CTkButton(master=self, text="Convertir °C a °F", command=self.btn_convertir_c_f_on_click)
         self.btn_convertir_c_f.grid(row=3, pady=10, columnspan=2, sticky="nsew")
         
@@ -48,12 +48,29 @@ class App(customtkinter.CTk):
         self.btn_convertir_f_c.grid(row=4, pady=10, columnspan=2, sticky="nsew")
     
     def btn_convertir_c_f_on_click(self):
-        pass
-
+        
+        centigrados = self.txt_temperatura_c.get()
+        centigrados = float(centigrados)
+        
+        conversion_c_f = self.btn_convertir_c_f
+        
+        conversion_c_f = (centigrados * 9 / 5) + 32
+        farenheit_temp = round(conversion_c_f, 1)
+        
+        alert("Utn", F"{centigrados} * 9 / 5 + 32 = {farenheit_temp}")
+        
     def btn_convertir_f_c_on_click(self):
-        pass
-    
-    
+        
+        farenheit = self.txt_temperatura_f.get()
+        farenheit = float(farenheit)
+
+        conversion_f_c = self.btn_convertir_f_c
+
+        conversion_f_c = (farenheit - 32 * 5 / 9)
+        centigrados_temp = round(conversion_f_c, 1)
+
+        alert("Utn", f"{farenheit} - 32 * 5 / 9 = {centigrados_temp}")
+        
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
