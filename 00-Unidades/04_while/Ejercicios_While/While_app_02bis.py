@@ -37,8 +37,8 @@ class App(customtkinter.CTk):
             contador += 2 
             
         alert("Utn", suma) #se muestra en el alert el acumulador y no el contador
-
-
+            
+            
             
             
             
