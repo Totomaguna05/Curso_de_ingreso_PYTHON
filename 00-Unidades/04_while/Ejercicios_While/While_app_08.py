@@ -51,7 +51,7 @@ class App(customtkinter.CTk):
             if numero > 0:
                 suma_valores += numero
             elif numero < 0:
-
+                
                 producto *= numero
 
         self.txt_suma_acumulada.insert(0, suma_valores)
