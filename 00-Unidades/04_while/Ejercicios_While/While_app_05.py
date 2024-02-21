@@ -33,10 +33,10 @@ class App(customtkinter.CTk):
         letra = prompt("letra", "ingrese una letra")
         while letra != "U" and letra != "T" and letra != "N":
             letra = prompt("error", "reingrese la letra")
-
+            
         alert("letra", "accedio correctamente")
             
-    
+
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
