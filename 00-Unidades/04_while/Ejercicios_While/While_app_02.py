@@ -33,8 +33,8 @@ class App(customtkinter.CTk):
         while numero > 0:
             alert("Utn", numero)
             numero -= 1
-    
-    
+            
+            
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
