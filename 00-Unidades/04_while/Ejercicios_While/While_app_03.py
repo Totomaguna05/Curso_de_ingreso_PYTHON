@@ -34,7 +34,7 @@ class App(customtkinter.CTk):
             clave = prompt("error", "reingrese clave") #uso la misma variable para que no se forme un bucle infinito
 
         alert("banco", "bienvenido a bbva")
-        
+                
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
