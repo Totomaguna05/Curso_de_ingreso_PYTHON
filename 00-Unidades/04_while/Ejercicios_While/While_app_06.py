@@ -53,7 +53,7 @@ class App(customtkinter.CTk):
         self.txt_suma_acumulada.insert(0, acumulador_numeros)
         self.txt_promedio.insert(0, promedio)
 
-
+        
 
     
 if __name__ == "__main__":
