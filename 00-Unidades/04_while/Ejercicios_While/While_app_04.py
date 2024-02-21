@@ -36,9 +36,9 @@ class App(customtkinter.CTk):
         while numero_ingresado < 0 or numero_ingresado > 9:
             numero_ingresado = prompt("error", "Reingrese un numero")
             numero_ingresado = int(numero_ingresado)
-
+            
         alert("Utn", "numero correcto")
-        
+
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
