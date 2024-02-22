@@ -37,7 +37,13 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
-        pass
+        contador = 0
+        numero = input("Ingrese un numero:")
+        numero = int(numero)
+
+        maximo = numero
+        minimo = numero
+
 
     
 if __name__ == "__main__":
